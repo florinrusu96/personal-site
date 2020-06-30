@@ -96,8 +96,8 @@ body{
     
 }
 
-.project-icon-agora{
-    width: 100px;
+.project-icon{
+    width: 120px;
 }
 
 .project-title{
@@ -203,5 +203,9 @@ body{
 
     .title{
         font-size: 3em;
+    }
+
+    .project-icon{
+        width: 200px;
     }
 }
