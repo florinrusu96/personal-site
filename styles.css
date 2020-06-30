@@ -1,0 +1,207 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+/* variables */
+:root{
+    --primary: #434382;
+    --secondary: #cbc5ea;
+    --background: #12122b;
+    --background-secondary: #12122b;
+}
+/* reset */
+body, li, a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--secondary);
+}
+li{
+    list-style-type: none;
+}
+/* base styles */
+body{
+    background: var(--background)
+}
+
+.header{
+    background-image: url('assets/stars.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.navigation{
+    padding-top: 5vw;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+    width: 75vw;
+    margin:0 auto;
+    background-color: var(--background);
+}
+
+.mountains{
+    bottom: 0;
+    height: 45vw;
+}
+
+.icon-name{
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45%;
+}
+
+.icon{
+    padding:3em;
+}
+
+.name{
+    font-size: 1.7em;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bolder;
+}
+
+.work{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--primary);
+
+}
+
+.title{
+    padding-top: 1em;
+    font-size: 1.5em;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bolder;
+    color: var(--secondary)
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.project-icon-agora{
+    width: 100px;
+}
+
+.project-title{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.5em;
+}
+
+.project-description{
+    font-family: 'Catamaran', sans-serif;
+    font-style: italic;
+}
+
+.skills{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--background-secondary);
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.skill-title{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1em;
+}
+
+.skill-icon{
+    width: 70px;
+}
+
+.skill-description{
+    font-family: 'Catamaran', sans-serif;
+    font-size: .6em;
+    font-style: italic;
+    text-align: center;
+    width: 60%;
+}
+
+/* mobile styles */
+
+/* small tablet styles */
+@media screen and (min-width: 620px){
+    .header{
+        background-image: url('assets/stars-desktop.svg');
+    }
+}
+
+/* large tablets styles */
+@media screen and (min-width: 960px){
+
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px){
+    .name{
+        font-size: 3.5em;
+    }
+
+    .navigation{
+        padding-top: 1vw;
+        font-size: 1.5em;
+    }
+
+    .mountains{
+        height: 15vw;
+    }
+
+    .skills{
+        display: flex;
+    }
+
+    .skills-container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .skill-description{
+        font-size: 1em;
+    }
+
+    .skill-title{
+        font-size: 2em;
+    }
+    
+    .skill{
+        width: 350px;
+    }
+
+    .title{
+        font-size: 3em;
+    }
+}
