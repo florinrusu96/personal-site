@@ -4,13 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Florin-Andrei Rusu</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <section id="header" class="header">
         <nav class="navigation">
             <li><a href="#work">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li>Contact</li>
+            <li><a href="#contanct">Contact</a></li>
         </nav>
         <div class="icon-name">
             <img src="assets/icon.svg" alt="" class="icon">
@@ -45,26 +46,42 @@
 
     <section id="work" class="work">
         <span class="title">How I spend my time</span>
-        <div class="project">
-            <a href="https://agoramediu.app">
-                <img src="assets/agora.png" alt="" class="project-icon">
-            </a>
-            <span class="project-title">Agora</span>
-            <span class="project-description">Angular and UI/UX Design</span>
-        </div>
-
-        <div class="project">
-            <a href="https://Darksheep.app">
-                <img src="assets/darksheep.png" alt="" class="project-icon">
-            </a>
-            <span class="project-title">Darksheep</span>
-            <span class="project-description">Django based REST API</span>
+        <div class="work-container">
+            <div class="project">
+                <a href="https://agoramediu.ro">
+                    <img src="assets/agora.png" alt="" class="project-icon">
+                </a>
+                <span class="project-title">Agora</span>
+                <span class="project-description">Angular and UI/UX Design</span>
+            </div>
+    
+            <div class="project">
+                <a href="https://Darksheep.app">
+                    <img src="assets/darksheep.png" alt="" class="project-icon">
+                </a>
+                <span class="project-title">Darksheep</span>
+                <span class="project-description">Django based REST API</span>
+            </div>
         </div>
     </section>
 
-    <section class="contanct">
+    <section id="contanct" class="contanct">
         <span class="title">Get in touch with me</span>
-        
+        <div class="contanct-container">
+            <span class="email"></span>
+            <div class="social-media">
+                <img class="social-media-icon" src="assets/facebook.svg">
+                <img class="social-media-icon" src="assets/github.svg">
+                <img class="social-media-icon" src="assets/linkedin.svg">
+            </div>
+            <div class="contact-form">
+                <span class="contact-text">Say hello</span>
+                <input id="email" placeholder="Your email" type="email" class="contact-mail">
+                <input id="subject" placeholder="Subject" type="text" class="contact-title">
+                <textarea id="message" class="contact-message" placeholder="Message" ></textarea>
+                <input onclick="sendMail()" class="send-button" value="Send" type="submit">
+            </div>
+        </div>
     </section>
 </body>
 </html>
