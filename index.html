@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,6 +7,13 @@
     <title>Florin-Andrei Rusu</title>
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
+    <link rel = "icon" href = "./assets//icon.svg" type = "image/x-icon">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.15.5/firebase-app.js"></script>
+    <script src="/__/firebase/7.15.5/firebase-auth.js"></script>
+    <script src="/__/firebase/7.15.5/firebase-functions.js"></script>
+    <script src="/__/firebase/init.js"></script>
+
 </head>
 <body>
     <section id="header" class="header">
@@ -70,9 +79,9 @@
         <div class="contanct-container">
             <span class="email"></span>
             <div class="social-media">
-                <img class="social-media-icon" src="assets/facebook.svg">
-                <img class="social-media-icon" src="assets/github.svg">
-                <img class="social-media-icon" src="assets/linkedin.svg">
+                <a href="https://www.facebook.com/flz.flo/"><img class="social-media-icon" src="assets/facebook.svg"></a>
+                <a href="https://github.com/florinrusu96"><img class="social-media-icon" src="assets/github.svg"></a>
+                <a href="https://www.linkedin.com/in/florin-andrei-rusu-65b3a712b/"><img class="social-media-icon" src="assets/linkedin.svg"></a>
             </div>
             <div class="contact-form">
                 <span class="contact-text">Say hello</span>
@@ -80,6 +89,9 @@
                 <input id="subject" placeholder="Subject" type="text" class="contact-title">
                 <textarea id="message" class="contact-message" placeholder="Message" ></textarea>
                 <input onclick="sendMail()" class="send-button" value="Send" type="submit">
+            </div>
+            <div class="sent-text">
+                <span>Thank you for reaching out!</span>
             </div>
         </div>
     </section>

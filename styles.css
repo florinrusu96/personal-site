@@ -1,6 +1,5 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
-
 /* variables */
 :root{
     --primary: #434382;
@@ -217,18 +216,21 @@ body{
 
 
 .contact-message{
-    height: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
     resize: none;
+    height: 40%;
     width: 50%;
-    border-radius: 3%;
-    font-family: 'Catamaran', sans-serif;
-    border: 5px 7px solid black;
-    padding: 5px;
 }
 
 .contact-text{
     font-size: 1.2em;
     padding-bottom: 1em;
+    font-family: 'Catamaran', sans-serif;
 }
 
 .send-button{
@@ -241,6 +243,33 @@ body{
     background-color: var(--primary);
     color: var(--secondary);
 }
+
+.contact-mail{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.contact-title{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.sent-text{
+    display: none;
+    font-family: 'Catamaran', sans-serif;
+}
+  
+
 /* mobile styles */
 
 /* small tablet styles */
